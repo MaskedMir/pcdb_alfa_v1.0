@@ -54,6 +54,7 @@ class computer(classmethod):
 
             return result
 
+# test git
 
 class db_search(float):  # Отбор из БД необходимых данных
     power = 0
