@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f193de6-d322-4c74-a155-059425215145" name="Changes" comment="cherry">
-      <change beforePath="$PROJECT_DIR$/errortest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcdb.db" beforeDir="false" afterPath="$PROJECT_DIR$/pcdb.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/select_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/select_alg.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f193de6-d322-4c74-a155-059425215145" name="Changes" comment="cherry" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +17,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MaskedMir"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7e79b7ef-0fa7-4544-9d05-31da5a0cb56c" />
+        <option name="url" value="https://github.com/MaskedMir/pcdb_alfa_v1.0" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -116,7 +126,7 @@
       <workItem from="1699523577437" duration="1000" />
       <workItem from="1700420460206" duration="10000" />
       <workItem from="1700431593520" duration="207000" />
-      <workItem from="1700431813204" duration="1453000" />
+      <workItem from="1700431813204" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="cherry">
       <option name="closed" value="true" />
@@ -126,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698224086054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cherry">
+      <option name="closed" value="true" />
+      <created>1700433370044</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700433370044</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
