@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f193de6-d322-4c74-a155-059425215145" name="Changes" comment="cherry">
+      <change beforePath="$PROJECT_DIR$/errortest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcdb.db" beforeDir="false" afterPath="$PROJECT_DIR$/pcdb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/select_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/select_alg.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Uf380dEYZbSkv4vx5s5qLYr64n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>0c0f98b6-e909-4417-89dc-21ccc674f460</source-data-source-id>\n        <source-path>schema/&quot;main&quot;</source-path>\n        <target-data-source-id>0c0f98b6-e909-4417-89dc-21ccc674f460</target-data-source-id>\n        <target-path>schema/&quot;main&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
+    "last_opened_file_path": "C:/Users/Masked/PycharmProjects/pcdb_alfa_v1.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Masked\PycharmProjects\pcdb_alfa_v1.0" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Masked\PycharmProjects\pcdb_alfa_v1.0" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f193de6-d322-4c74-a155-059425215145" name="Changes" comment="" />
+      <created>1693316644864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693316644864</updated>
+      <workItem from="1693316647099" duration="486000" />
+      <workItem from="1693398653918" duration="4442000" />
+      <workItem from="1693727478789" duration="626000" />
+      <workItem from="1693728112806" duration="4525000" />
+      <workItem from="1693891685744" duration="2302000" />
+      <workItem from="1694099928244" duration="1179000" />
+      <workItem from="1694199664900" duration="217000" />
+      <workItem from="1694199907779" duration="44000" />
+      <workItem from="1694199973039" duration="7000" />
+      <workItem from="1694505594894" duration="1752000" />
+      <workItem from="1694508028576" duration="378000" />
+      <workItem from="1694599530186" duration="110000" />
+      <workItem from="1694636049984" duration="642000" />
+      <workItem from="1694643394956" duration="6000" />
+      <workItem from="1694643522323" duration="602000" />
+      <workItem from="1694644154253" duration="11000" />
+      <workItem from="1695023632250" duration="47000" />
+      <workItem from="1695049420857" duration="858000" />
+      <workItem from="1695195044816" duration="1334000" />
+      <workItem from="1695369981256" duration="989000" />
+      <workItem from="1695562678922" duration="1092000" />
+      <workItem from="1695634441037" duration="370000" />
+      <workItem from="1695649610108" duration="27000" />
+      <workItem from="1695649672525" duration="6000" />
+      <workItem from="1695649928419" duration="646000" />
+      <workItem from="1695715668942" duration="506000" />
+      <workItem from="1695825259372" duration="532000" />
+      <workItem from="1695905112594" duration="12000" />
+      <workItem from="1696790849111" duration="913000" />
+      <workItem from="1696801701084" duration="602000" />
+      <workItem from="1696855949872" duration="613000" />
+      <workItem from="1696926422803" duration="165000" />
+      <workItem from="1697196818968" duration="2446000" />
+      <workItem from="1697199795436" duration="2620000" />
+      <workItem from="1697449046484" duration="14000" />
+      <workItem from="1697451777813" duration="212000" />
+      <workItem from="1697534706994" duration="1141000" />
+      <workItem from="1697788737410" duration="291000" />
+      <workItem from="1698053709733" duration="205000" />
+      <workItem from="1698219203543" duration="4754000" />
+      <workItem from="1698226437327" duration="53000" />
+      <workItem from="1698234469401" duration="594000" />
+      <workItem from="1698603932099" duration="735000" />
+      <workItem from="1698669274718" duration="311000" />
+      <workItem from="1698843210197" duration="296000" />
+      <workItem from="1699263456177" duration="663000" />
+      <workItem from="1699523577437" duration="1000" />
+      <workItem from="1700420460206" duration="10000" />
+      <workItem from="1700431593520" duration="207000" />
+      <workItem from="1700431813204" duration="1453000" />
+    </task>
+    <task id="LOCAL-00001" summary="cherry">
+      <option name="closed" value="true" />
+      <created>1698224086054</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698224086054</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="cherry" />
+    <option name="LAST_COMMIT_MESSAGE" value="cherry" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pcdb_alfa_v1_0$main.coverage" NAME="main Coverage Results" MODIFIED="1698053721495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -11,184 +11,48 @@ ram_procent = 0.05
 power = 0
 
 
-def parametr_select(column, cpu_list):
+def parametr_select(column, list):
     parametr_list = []
-    for cpu in cpu_list:
-        parametr_list.append(cpu[column])
+    for el in list:
+        parametr_list.append(el[column])
     return parametr_list
 
 
-class select_alg(list):
+class computer(classmethod):
+    class CPU(list):
+        def select_cpu(self):  # Выбор CPU по параметрам из уже отобранных по цене
 
-    def select_cpu(self):  # Выбор CPU по параметрам из уже отобранных по цене
+            cpu_list = [0] * len(self)
+            parametrs = {1: 3, 2: 2, 3: 3, 4: 2, 5: 2, 6: 2,
+                         7: 2, 8: 2, 9: 2, 10: 2, 11: 2}
 
-        cpu_list = [0] * len(self)
+            for par_num in range(1, 12):
+                tp_list = parametr_select(par_num, self)
+                cpu_list[tp_list.index(max(tp_list))] += parametrs[par_num]
 
-        tp_list = parametr_select(1, self)
-        cpu_list[tp_list.index(max(tp_list))] += 3
+            if cpu_list.count(max(cpu_list)) != 1:
+                price_list = parametr_select(12, self)
+                cpu_list[price_list.index(min(price_list))] += 10
 
-        canals_list = parametr_select(2, self)
-        cpu_list[canals_list.index(max(canals_list))] += 2
+            return self[cpu_list.index(max(cpu_list))]
 
-        cores_list = parametr_select(3, self)
-        cpu_list[cores_list.index(max(cores_list))] += 2
+        def search_cpu(price_pc):  # Отбор из БД CPU
+            global power
+            price_max = int(price_pc * (cpu_procent + 0.05))
+            price_min = int(price_pc * (cpu_procent - 0.05))
 
-        freq_list = parametr_select(4, self)
-        cpu_list[freq_list.index(max(freq_list))] += 3
+            cpu_selection = db_sel("cpu", price_max, price_min)
 
-        cache_list = parametr_select(5, self)
-        cpu_list[cache_list.index(max(cache_list))] += 1
+            try:
+                if len(cpu_selection) > 1:
+                    result = select_cpu(cpu_selection)
+                else:
+                    result = cpu_selection[0]
+                power += result[6]
+            except IndexError:
+                result = ["Нет комплектующей", 0]
 
-        tdp_list = parametr_select(6, self)
-        cpu_list[tdp_list.index(min(tdp_list))] += 2
-
-        ramt_list = parametr_select(9, self)
-        cpu_list[ramt_list.index(max(ramt_list))] += 2
-
-        ramc_list = parametr_select(10, self)
-        cpu_list[ramc_list.index(max(ramc_list))] += 2
-
-        ramf_list = parametr_select(11, self)
-        cpu_list[ramf_list.index(max(ramf_list))] += 2
-
-        video_core_list = parametr_select(7, self)
-        for i, el in enumerate(video_core_list):
-            if bool(i):
-                cpu_list[i] += 1
-
-        if cpu_list.count(max(cpu_list)) != 1:
-            price_list = parametr_select(12, self)
-            cpu_list[price_list.index(min(price_list))] += 10
-
-        return self[cpu_list.index(max(cpu_list))]
-
-    def select_gpu(self):  # Выбор GPU по параметрам уже отобранных по цене
-
-        check = [0] * len(self)
-        column = 2
-        max_param = 0
-
-        while column <= 3:
-            for p in range(len(self)):
-                if self[p][column] > max_param:
-                    max_param = self[p][column]
-
-            for cpu_n in range(len(self)):
-                if max_param in self[cpu_n]:
-                    check[cpu_n] += 1
-            column += 1
-
-        while column <= 5:
-            max_param = 10 ** 9
-            for p in range(len(self)):
-                if self[p][column] < max_param:
-                    max_param = self[p][column]
-
-            for cpu_n in range(len(self)):
-                if max_param in self[cpu_n]:
-                    check[cpu_n] += 1
-            column += 1
-
-        return self[check.index(max(check))]
-
-    def select_ram(self):  # Выбор RAM по параметрам из уже отобранных по цене
-
-        ram_list = [0] * len(self)
-
-        ramm_list = parametr_select(1, self)
-        ram_list[ramm_list.index(max(ramm_list))] += 3
-
-        ramt_list = parametr_select(2, self)
-        ram_list[ramt_list.index(max(ramt_list))] += 2
-
-        ramc_list = parametr_select(3, self)
-        ram_list[ramc_list.index(max(ramc_list))] += 2
-
-        ramf_list = parametr_select(4, self)
-        ram_list[ramf_list.index(max(ramf_list))] += 2
-
-        if ram_list.count(max(ram_list)) != 1:
-            price_list = parametr_select(5, self)
-            ram_list[price_list.index(min(price_list))] += 10
-
-        return self[ram_list.index(max(ram_list))]
-
-    def select_psd(self):  # Выбор PSD по параметрам из уже отобранных по цене
-
-        check = [0] * len(self)
-        max_param = 0
-        column = 2
-
-        for p in range(len(self)):
-            if self[p][column] > max_param:
-                max_param = self[p][column]
-
-        for cpu_n in range(len(self)):
-            if max_param in self[cpu_n]:
-                check[cpu_n] += 1
-        column += 1
-
-        while column <= 4:
-            max_param = 10 ** 9
-            for p in range(len(self)):
-                if self[p][column] < max_param:
-                    max_param = self[p][column]
-
-            for cpu_n in range(len(self)):
-                if max_param in self[cpu_n]:
-                    check[cpu_n] += 1
-            column += 1
-
-        return self[check.index(max(check))]
-
-    def select_mb(self):  # Выбор материнской платы по параметрам из уже отобранных по цене
-
-        mb_list = [0] * len(self)
-
-        chipset_list = parametr_select(1, self)
-        mb_list[chipset_list.index(max(chipset_list))] += 3
-
-        ramt_list = parametr_select(3, self)
-        mb_list[ramt_list.index(max(ramt_list))] += 2
-
-        sata_list = parametr_select(5, self)
-        mb_list[sata_list.index(max(sata_list))] += 1
-
-        satav_list = parametr_select(6, self)
-        mb_list[satav_list.index(max(satav_list))] += 2
-
-        m2_list = parametr_select(7, self)
-        mb_list[m2_list.index(max(m2_list))] += 2
-
-        usb32_list = parametr_select(8, self)
-        mb_list[usb32_list.index(max(usb32_list))] += 1
-
-        usb20_list = parametr_select(9, self)
-        mb_list[usb20_list.index(max(usb20_list))] += 1
-
-        if mb_list.count(max(mb_list)) != 1:
-            price_list = parametr_select(5, self)
-            mb_list[price_list.index(min(price_list))] += 10
-
-        return self[mb_list.index(max(mb_list))]
-
-    def select_ps(self):  # Выбор блока питания по параметрам из уже отобранных по цене
-
-        check = [0] * len(self)
-        column = 2
-
-        while column <= 3:
-            max_param = 10 ** 9
-            for p in range(len(self)):
-                if self[p][column] < max_param:
-                    max_param = self[p][column]
-
-            for cpu_n in range(len(self)):
-                if max_param in self[cpu_n]:
-                    check[cpu_n] += 1
-            column += 1
-
-        return self[check.index(max(check))]
+            return result
 
 
 class db_search(float):  # Отбор из БД необходимых данных
